@@ -1,6 +1,6 @@
 #!/bin/sh
 path="$1"
-repo_name="$2"
+repo_name="https://github.com/Divaiber/Bla.git"
 
 git init $path
 git add --all
