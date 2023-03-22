@@ -1,25 +1,10 @@
-#!/bin/bash
-cd $1
+#!/bin/sh
+path="$1"
+repo_name="$2"
 
-direcroty_path=$1
-
-#Отримання шляху до локального каталогу та віддаленого репозиторію
-remote_repository=$2
-
-#Ініціалізація локального репозиторію
-git init
-#Додавання віддаленого репозиторію
-git remote add origin https://github.com/Divaiber/Bla.git
-
-git branch -M main
-
-#Додавання всіх файлів у локальний репозиторій
-git add .
-
-#Створення коміту
-git commit -m "Initial commit"
-
-#Оновлення віддаленого репозиторію
+git init $path
+git add --all
+git commit -m "initial commit"
+git brach -M main
+git remote add origin $repo_name
 git push -u origin main
-
-echo "Script done"
