@@ -9,7 +9,7 @@ remote_repository=$2
 #Ініціалізація локального репозиторію
 git init
 #Додавання віддаленого репозиторію
-git remote add origin $remote_repository
+git remote add origin https://github.com/Divaiber/Bla.git
 
 git branch -M main
 
